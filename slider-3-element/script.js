@@ -3,11 +3,11 @@ const btnBack = document.getElementById("btn-back");
 const images = document.querySelectorAll(".image");
 
 const imagesSrc = [
-	'img/img-001.jpg',
-	'img/img-002.jpg',
-	'img/img-003.jpg',
-	'img/img-004.jpg',
-	'img/img-005.jpg'
+	'./img/img-001.jpg',
+	'./img/img-002.jpg',
+	'./img/img-003.jpg',
+	'./img/img-004.jpg',
+	'./img/img-005.jpg'
 ];
 
 let i = 1;
