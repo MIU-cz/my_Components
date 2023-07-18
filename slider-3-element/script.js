@@ -1,5 +1,7 @@
 const btnForward = document.getElementById("btn-forward");
 const btnBack = document.getElementById("btn-back");
+
+// images in html
 const images = document.querySelectorAll(".image");
 
 const imagesSrc = [
@@ -12,6 +14,7 @@ const imagesSrc = [
 
 let i = 1;
 
+// move slider right
 btnForward.addEventListener('click', function (event) {
 
 	if (i < imagesSrc.length - 2) {
@@ -21,6 +24,7 @@ btnForward.addEventListener('click', function (event) {
 		i++;
 	}
 
+	// for infinite scroll
 	else if (i < imagesSrc.length - 1) {
 		images[0].src = imagesSrc[i];
 		images[1].src = imagesSrc[i + 1];
@@ -34,11 +38,9 @@ btnForward.addEventListener('click', function (event) {
 		images[2].src = imagesSrc[i - (imagesSrc.length - 2)];
 		i = 0;
 	}
-
-	console.log(i);
-	console.log(this.id);
 })
 
+// move slider left
 btnBack.addEventListener('click', function (event) {
 
 	if (i > 1) {
@@ -48,6 +50,7 @@ btnBack.addEventListener('click', function (event) {
 		i--;
 	}
 
+	// for infinite scroll
 	else if (i > 0) {
 		images[0].src = imagesSrc[imagesSrc.length - i];
 		images[1].src = imagesSrc[i - 1];
@@ -61,8 +64,5 @@ btnBack.addEventListener('click', function (event) {
 		images[2].src = imagesSrc[i];
 		i = imagesSrc.length - 1;
 	}
-
-	console.log(i);
-	console.log(this.id);
 })
 
