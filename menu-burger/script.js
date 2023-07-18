@@ -1,6 +1,6 @@
 // =======================
 // # menu - scroll top
-const Header = document.querySelector(".header"); //header section for heights calculate
+const Header = document.querySelector("#header"); //header section for heights calculate
 const NavBar = document.querySelector("#headerNavbar"); //bar section ror scroll
 
 document.addEventListener('scroll', function (event) {

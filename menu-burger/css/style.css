@@ -1,1 +1,37 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
+
+body {
+  width: 100%;
+}
+body li:hover,
+body a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.container__header {
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(180deg, #012e40 0%, #03a696 0.1%, rgba(18, 18, 21, 0.1) 100%), url(../img/bg-main.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+.container__header_content {
+  width: 100%;
+  height: 100%;
+}
+
+.header__navBar {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  justify-content: space-between;
+}/*# sourceMappingURL=style.css.map */
