@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  background-color: hsl(0, 0%, 85%);
+  transition: all 0.3s;
+}
+
+.container {
+  margin: 100px auto auto;
+  padding: 20px;
+  width: 900px;
+  border: solid 1px #012e40;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container__image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: solid 1px #012e40;
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 85%);
+  padding: 20px;
+}
+.container__image .image_content {
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+}
+.container__image .image_content img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.containet__btn {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-image: url(../icons/emoji-expressionless.svg);
+  background-size: cover;
+  background-color: #038c8c;
+}
+.btn:hover {
+  background-image: url(../icons/emoji-smile.svg);
+}
+.btn:active {
+  background-color: #f28705;
+}/*# sourceMappingURL=style.css.map */
