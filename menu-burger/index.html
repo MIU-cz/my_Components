@@ -5,107 +5,101 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Hamburger menu</title>
+	<link rel="shortcut icon" href="img/autor.png" type="image/png">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-	<header class="container__header" id="header">
+<body class="scroll_view">
+	<header class="header__container" id="header">
+		<!-- NAVBAR -->
+		<nav class="nav__container" id="navBar">
 
-		<div class="container__header_content">
-
-			<div class="header__navBar " id="headerNavbar">
-
-				<!-- logo -->
-				<div class="navBar__brand">
-					<a href="#header">
-						<img src="images/logo.svg" alt="logo image">
-					</a>
-					<span>Brand</span>
-				</div>
-
-				<!-- Bar menu -->
-				<div class="container__navBar_menu" id="navbarMenu">
-					<div class="container__navBar_cover">
-						<!-- menu -->
-						<ul class="navBar__menu">
-
-							<li class="navBar__menu_item">
-								<h4>Link_1</h4>
-								<div class="menu_item_dropdown hidden_item">
-									<ul class="item_dropdoun_cover">
-										<li><a href="">Link_1_1</a></li>
-										<li><a href="">Link_1_2</a></li>
-										<li><a href="">Link_1_3</a></li>
-										<li><a href="">Link_1_4</a></li>
-										<li><a href="">Link_1_5</a></li>
-									</ul>
-								</div>
-							</li>
-
-							<li class="navBar__menu_item">
-								<h4>Link_2</h4>
-								<div class="menu_item_dropdown hidden_item">
-									<ul class="item_dropdoun_cover">
-										<li><a href="">Link_2_1</a></li>
-										<li><a href="">Link_2_2</a></li>
-										<li><a href="">Link_2_3</a></li>
-										<li><a href="">Link_2_4</a></li>
-										<li><a href="">Link_2_5</a></li>
-									</ul>
-								</div>
-							</li>
-
-							<li class="navBar__menu_item">
-								<h4>Link_3</h4>
-								<div class="menu_item_dropdown hidden_item">
-									<ul class="item_dropdoun_cover">
-										<li><a href="">Link_3_1</a></li>
-										<li><a href="">Link_3_2</a></li>
-										<li><a href="">Link_3_3</a></li>
-										<li><a href="">Link_3_4</a></li>
-										<li><a href="">Link_3_5</a></li>
-									</ul>
-								</div>
-							</li>
-						</ul>
-
-					</div>
-
-				</div>
-
-				<!-- Burger button -->
-				<button class="btn_burger " id="btnBurger" aria-label="humburger">
-				</button>
-
+			<!-- LOGO -->
+			<div class="navBar__brand_container">
+				<a href="#header">
+					<img src="img/autor.png" alt="logo image">
+				</a>
+				<span>Brand</span>
 			</div>
 
-			<!-- main header content -->
-			<div class="header__content">
-				<div class="header__title">
-					<h1>main title header</h1>
-				</div>
+			<!-- MENU -->
+			<div class="navBar__menu_container" id="navBarMenu">
+				<ul class="navBar__menu_items">
+					<li class="menu__item_container">
+						<h3>Link_1</h3>
+						<div class="menu_item_dropdown hidden_item">
+							<ul class="item_dropdoun_cover">
+								<li><a href="">Link_1_1</a></li>
+								<li><a href="">Link_1_2</a></li>
+								<li><a href="">Link_1_3</a></li>
+								<li><a href="">Link_1_4</a></li>
+								<li><a href="">Link_1_5</a></li>
+							</ul>
+						</div>
+					</li>
 
-				<div class="header__description">
-					<p>main description header</p>
-					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero nam dicta, ipsa
-						reprehenderit, temporibus quos eveniet expedita incidunt illum tenetur velit rem similique,
-						illo perferendis consectetur exercitationem minima veritatis quae.
-						Debitis delectus deleniti, inventore voluptas quod aperiam sunt ad quaerat cum expedita non
-						illo at id repellendus aspernatur. Hic, deserunt praesentium! Assumenda, error nostrum
-						voluptas expedita aperiam eligendi porro nesciunt!</p>
-				</div>
+					<li class="menu__item_container">
+						<h3>Link_2</h3>
+						<div class="menu_item_dropdown hidden_item">
+							<ul class="item_dropdoun_cover">
+								<li><a href="">Link_2_1</a></li>
+								<li><a href="">Link_2_2</a></li>
+								<li><a href="">Link_2_3</a></li>
+								<li><a href="">Link_2_4</a></li>
+								<li><a href="">Link_2_5</a></li>
+							</ul>
+						</div>
+					</li>
 
+					<li class="menu__item_container">
+						<h3>Link_3</h3>
+						<div class="menu_item_dropdown hidden_item">
+							<ul class="item_dropdoun_cover">
+								<li><a href="">Link_3_1</a></li>
+								<li><a href="">Link_3_2</a></li>
+								<li><a href="">Link_3_3</a></li>
+								<li><a href="">Link_3_4</a></li>
+								<li><a href="">Link_3_5</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
 			</div>
-		</div>
+
+			<!-- Burger button -->
+			<button class="btn_burger " id="btnBurger" aria-label="humburger">
+				<span></span>
+			</button>
+		</nav>
+
+		<!-- SECTION -->
+		<section class="section__container">
+
+			<div class="header__title">
+				<h1>main title header</h1>
+			</div>
+
+			<div class="header__description">
+				<p>main description header</p>
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero nam dicta, ipsa
+					reprehenderit, temporibus quos eveniet expedita incidunt illum tenetur velit rem similique,
+					illo perferendis consectetur exercitationem minima veritatis quae.
+					Debitis delectus deleniti, inventore voluptas quod aperiam sunt ad quaerat cum expedita non
+					illo at id repellendus aspernatur. Hic, deserunt praesentium! Assumenda, error nostrum
+					voluptas expedita aperiam eligendi porro nesciunt!</p>
+			</div>
 
 
+		</section>
 	</header>
 
+	<!-- ### for testing scroll-lock ### -->
+	<div style="height: 2000px;"></div>
 
 	<!-- main scripts -->
 	<!-- ============================ -->
-	<!-- <script src="script.js"></script> -->
+	<script src="script.js"></script>
 </body>
 
 </html>
