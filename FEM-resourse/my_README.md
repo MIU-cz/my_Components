@@ -74,7 +74,7 @@ Users should be able to:
 ## Author
 
 <autor style="float:right;margin:0 10px 0 0">
-    <img src="../FEM-resourse/pics/autor.png" alt="Autor" width="100px">
+    <img src="FEM-resourse/pics/autor.png" alt="Autor" width="100px">
 </autor>
 
 - [My Contacts](https://mehal.my.canva.site)
