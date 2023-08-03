@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Vue.js - test components</title>
+	<link rel="stylesheet" href="style.css">
+	<!-- SCRIPTS + Vue.JS -->
+	<script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+	<!-- To-Do App -->
+	<div id="appTodoList">
+		<div class="center">
+			<h1 :style="{
+				color: taskname.length < 5 ? 'darkred' : 'darkblue',
+				textDecoration: taskname.length < 3 ? 'none' : 'underline'
+			}">
+				{{toUpperCase(title)}}
+			</h1>
+			<hr>
+			<div class="header">
+				<input type="text"
+					   class="inputTask"
+					   v-bind:placeholder="textline"
+					   v-model="taskname"
+					   v-on:keypress.enter="addTask" />
+				<!-- v-bind:value="taskname"
+					   v-on:input="inputedValue" -->
+
+				<button v-on:click="addTask"
+						v-bind:class="clas.green">
+					{{btn.add}}
+				</button>
+			</div>
+			<hr>
+
+			<ul v-if="tasks.length !== 0">
+				<li v-for="(task, i) in tasks"
+					:class="{'strike':isCheked[i]}">
+					<div class="content">
+						{{i+1}}.
+						<input type="checkbox"
+							   v-bind:name="i" id="ckbx"
+							   v-model="isCheked[i]">
+						{{toUpperCase(task)}}
+					</div>
+
+					<button v-bind:class="clas.red"
+							v-on:click="dellTask(i)">
+						{{btn.del}}
+					</button>
+				</li>
+
+			</ul>
+
+			<div v-else
+				 v-bind:class="clas.orange"
+				 style="text-align: center;">
+				Input your first note ...
+			</div>
+			<hr>
+			<div v-bind:class="clas.gray"
+				 style="text-align: center;">
+				<span>
+					You have - {{tasks.length}} tasks to complete !!
+				</span>
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- new App -->
+	<div id="app">
+		<div class="center">
+			<h2>{{title}}</h2>
+			<hr>
+
+			<div v-html="ultitle"></div>
+			<ul>
+				<li v-for="(item, i) in 5">
+					{{i}}/{{item}}
+				</li>
+			</ul>
+			<hr>
+
+			<ul>
+				<li v-for="(value, key) in person">
+					{{key}}: {{value}}
+				</li>
+			</ul>
+			<hr>
+
+			<ul v-if="myArr.length">
+				<li
+					v-for="(item, i) in myArr"
+					@click="myArr.splice(i,1)"
+					:key="item">
+					{{item}}
+					<input type="text" @click.prevent.stop>
+				</li>
+			</ul>
+			<h3 v-else>no items in Array</h3>
+			<h5 v-show="myArr.length">{{myArr.length}} - items in Array</h5>
+			<input type="text"
+				   placeholder="add item to Array"
+				   ref="inputAddItemArray"
+				   @keyup.enter="addItemArray">
+		</div>
+
+	</div>
+
+
+	<!-- SCRIPTS + Vue.JS -->
+	<script src="app-todo-list.js"></script>
+	<script src="app.js"></script>
+</body>
+
+</html>

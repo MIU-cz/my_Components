@@ -1,0 +1,60 @@
+body {
+	width: 100%;
+	height: 100%;
+
+	background-color: darkslategrey;
+}
+
+.center {
+	width: 50%;
+	margin: 30px auto 0;
+	padding: 30px 20px;
+
+	background-color: white;
+	border-radius: 10px;
+}
+
+.inputTask {
+	padding: 5px 10px;
+}
+
+.header,
+.content,
+li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.strike {
+	text-decoration: line-through;
+}
+
+button {
+	border-radius: 10px;
+	padding: 5px 10px;
+	text-align: center;
+	color: white;
+	border: solid 1px white;
+
+	margin-left: 30px;
+}
+button:hover {
+	cursor: pointer;
+}
+button:active {
+	border: 0;
+}
+
+.red {
+	background-color: red;
+}
+.green {
+	background-color: green;
+}
+.gray {
+	background-color: gray;
+}
+.orange {
+	background-color: orange;
+}
