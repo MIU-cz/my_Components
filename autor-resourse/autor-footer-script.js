@@ -50,6 +50,7 @@ const footer =
 const addFooter = () => {
 	// let footerBlock = document.getElementsByClassName('autor')[0];
 	let footerBlock = document.getElementById('autor');
+	footerBlock.classList.add('autor');
 	footerBlock.innerHTML = footer;
 }
 
