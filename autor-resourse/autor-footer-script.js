@@ -1,3 +1,11 @@
+const head = document.getElementsByTagName('head')[0];
+const link = document.createElement('link');
+
+link.rel = 'stylesheet';
+link.href = 'src/autor-resourse/autor-footer-style.css';
+
+head.appendChild(link);
+
 const footer =
 	`
 	<div class="autor_description">
@@ -9,7 +17,7 @@ const footer =
 		<ul>
 
 			<li><a href="https://mehal.my.canva.site" target="_blank" title="Business card">
-					<img src="./components/autor.png" alt="smm-ico">
+					<img src="./src/autor-resourse/autor.png" alt="smm-ico">
 				</a></li>
 
 			<li><a href="https://www.facebook.com/mehaligor.cz" target="_blank" title="Facebook">
